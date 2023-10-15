@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Design by foolishdeveloper.com -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+
+</head>
+
+<body>
+
+    <form action="" method="post">
+
+        {% csrf_token %} 
+
+        <h1>CADASTRE-SE AQUI</h1>
+
+        <hr></hr>
+
+        <div class="input">
+
+          <input type="text" class="caixa" name="username" id="username" required>
+          <label for="username" class="inputlabel">User</label>
+
+        </div>
+
+        <div class="input">
+
+          <input type="email" class="caixa" name="email" id="email" required>
+          <label for="email" class="inputlabel">Email</label>
+
+        </div>
+
+        <div class="input">
+
+          <input type="password" class="caixa" id="password1" name="password1" required>
+          <label for="password1" class="inputlabel">Senha</label>
+
+        </div>
+
+        <div class="input">
+
+          <input type="password" id="password2" name="password2" class="caixa" required>
+          <label for="password2" class="inputlabel">Confirmar Senha</label>
+
+        </div>
+      
+        <button type="submit">Cadastrar</button>
+        
+        <h3>Já possui uma conta ?<a href="{% url 'login' %}" > Clique aqui!</a><h3>
+
+    </form>
+
+</body>
+</html>

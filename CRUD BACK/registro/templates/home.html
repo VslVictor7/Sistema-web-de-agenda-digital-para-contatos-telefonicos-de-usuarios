@@ -1,0 +1,137 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/Telaprincipal.css" %}">
+    <title>Agenda Telefônica</title>
+
+</head>
+
+<body>
+
+        <div class="counterner">
+
+           <img class="logo" src="{% static 'img/logosta.png' %}">
+           <h1><p class="ago">AGENDA TELEFÔNICA ONLINE</p></H1>
+
+        </div>
+
+        <div class="botao">
+
+            <div class="perfil">
+
+                <img src="{% static 'img/perfil.png' %}" class="img-perfil">
+                <h2 class="nome">{{ nome }}<h2>
+
+            </div>
+
+            <div class="sair">
+
+               <a href="{% url 'logout' %}" class="btn btn-primary"><img src="{% static 'img/porta.png' %}" class="porta"></a>
+
+            </div>
+          
+        </div>
+
+        <div class="submenu">
+
+            <ul class="menu">
+
+                <li><button class="mebu ad" onclick="mostrar('menuAd')" id="butaoad">Adicionar Contatos</button></li>
+
+            </ul>
+
+        </div>
+
+    <form action="" method="post">
+
+        {% csrf_token %}
+
+        <div class="aea ad2" id="menuAd">
+
+            <h3><span class="h3">Adicionar Contatos</span></h3>
+
+            <button Class="fechar"  onclick="fechar('menuAd')">X</button>
+
+            <div class="input">
+
+                <input type="text" class="caixa"  name="nome" id="nome" required>
+                <label for="username" class="inputlabel">Nome</label>
+
+            </div>
+
+            <div class="input">
+
+                <input type="email" class="caixa" name="email" id="email" required>
+                <label for="username" class="inputlabel">Email</label>
+
+            </div>
+
+            <div class="input">
+
+                <input type="tel" class="caixa number" name="telefone" id="telefone" min="1" max="11" required>
+                <label for="usernama" class="inputlabel">Número</label>
+
+            </div>
+
+            <button class="submitAD" type="submit">Adicionar</button>
+
+        </div>
+
+    </form>
+      
+        <div class="listatele">
+
+            <table>
+
+                <tr>
+                   <th colspan="3">Contatos</th>
+                </tr>
+
+                <tr>
+
+                   <th class="nne">ID</th>
+                   <th class="nne">Nome</th>
+                   <th class="nne">Email</th>
+                   <th class="nne">Telefone</th>
+                   <th class="nne">Id_contato</th>
+                   <th class="nne">Atualizar</th>
+                   <th class="nne">Apagar</th>
+
+                </tr>
+
+                {% for cell in contatos %}
+
+                <tr>
+        
+                   <td>{{ cell.id }}</td>
+                   <td>{{ cell.nome }}</td>
+                   <td>{{ cell.email }}</td>
+                   <td>{{ cell.telefone }}</td>
+                   <td>{{ cell.id_cad_id }}</td>
+                 
+                   <td><a href="/editar/{{ cell.id }}" class="btn-primary">Editar</a></td>
+                   <td><a href="/delete/{{ cell.id }}" class="btn-danger">Deletar</a></td>
+        
+                </tr>
+        
+              {% endfor %}
+        
+            </table>
+
+        </div>
+
+    <script src="{% static "js/home.js" %}" async defer></script>
+
+</body>
+
+</html>

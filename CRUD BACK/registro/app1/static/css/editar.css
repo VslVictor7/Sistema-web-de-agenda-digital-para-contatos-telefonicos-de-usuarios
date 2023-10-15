@@ -1,0 +1,90 @@
+body{
+    background-size: cover;
+    background-image:  linear-gradient(to bottom right, rgb(127, 214, 255),rgb(60, 190, 241), rgb(78, 60, 241) );
+    width:99vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: 78, 60, 241, 0.8;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.h3{
+    position: relative;
+    left:50%;
+    right: 50%;
+    font-size: 25px ;
+}
+.aea{
+    position: relative;
+    background-color: white;
+    color: rgb(54, 43, 156);
+    box-shadow: 10px 10px 0px rgb( 26, 20, 78);
+    top:30vh;
+    width:50vw;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 5px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%); 
+    border: 2px solid rgb(54, 43, 156);
+}
+.input{
+    left: 50%;
+    top: 2vh;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    border-color: rgb(54, 43, 156);
+    box-shadow: 5px 5px 0px rgb( 26, 20, 78);
+    border-style: solid;
+    height: 6.5vh;
+    width: 24vw;
+}
+
+.inputlabel{
+    position: relative;
+    top: 1.5vh;
+    transition: 0.3s;
+    left: -18.7vw;
+    font-size: 15px;
+    width: 20vw;
+}
+.caixa:focus~.inputlabel,
+.caixa:valid~.inputlabel{
+    top: -1.3vh;
+    font-size: 10px;
+    color: #262250;
+}
+.caixa{
+    background: none;
+    border-style: none;
+    outline: none;
+    font-size: 17px;
+    color: black;
+    width: 80%;
+    position: relative;
+    top:1.4vh;
+    left:1vw;
+}
+.submitAD{
+    position: relative;
+    top: 3vh;
+    left: 50%;
+    border: none;
+    height: 52px;
+    width: 150px;
+    background-color: rgb(114, 208, 252);
+    color: rgba(34, 24, 59);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 16.5px;
+    font-weight:600;
+}
+.submitAD:hover{
+    background-color:  rgb(80, 108, 161);
+    cursor: pointer;
+
+}

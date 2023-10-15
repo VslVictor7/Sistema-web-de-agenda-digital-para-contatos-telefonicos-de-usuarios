@@ -1,0 +1,273 @@
+body{
+    background-size: cover;
+    background-color: white;
+    width:100vw;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+.counterner{
+    background-image:  linear-gradient(to bottom right, rgb(127, 214, 255),rgb(60, 190, 241), rgb(78, 60, 241) );
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    border-radius: 0px;
+    left: 0vw;
+    top: 0vh;
+}
+.logo{
+    align-self: center;
+    position: absolute;
+    top: 3vh;
+    background-color: white;
+    border: 1px solid rgb( 26, 20, 78);
+    left: 100px;
+    width: 100px;
+    height: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    box-shadow: 3.0px 3.0px 0px rgb(26, 20, 78);
+    z-index: 1;
+}
+.ago{
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    top: 10vh;
+    color: white;
+    font-size: 40px;
+}
+.perfil{
+    height: 50px;
+    position: absolute;
+    top:10vh;
+    left: 82vw;
+    text-align: center;
+    width: 10vw;
+}
+.img-perfil{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5vh;
+    background-color: rgb(54, 43, 156);
+    border-radius: 50px;
+    box-shadow: 4.0px 4.0px 0px rgb(26, 20, 78);
+}
+.nome{
+    position: absolute;
+    color:white;
+    top: 8vh;
+    font-size: 15px;
+    width:10vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sair{
+    height: 50px;
+    position: absolute;
+    top:10vh;
+    left: 87vw;
+    text-align: center;
+    width: 10vw; 
+}
+.porta{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5vh;
+    background-color: rgb(54, 43, 156);
+    border-radius: 5px;
+    box-shadow: 4.0px 4.0px 0px rgb(26, 20, 78);
+    cursor: pointer;
+}
+.porta:hover{
+    opacity: 0.8;
+}
+.submenu{
+    position: relative;
+    top: 34.5vh;
+}
+.menu{
+    color: white;
+    position: relative;
+    list-style:none;
+    padding: 0px;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.menu li{
+    position:relative;
+    float:left;
+}
+.mebu{
+    width: 8vw;
+    height: 6vh;
+    border: none;
+    color: white;
+    background-color: rgb(54, 43, 156);
+    box-shadow: 5.0px 5.0px 0px rgb(26, 20, 78);
+}
+.mebu:hover{ 
+    background:white;
+    color: rgb(54, 43, 156);
+    box-shadow:0 3px 10px 0 rgb( 26, 20, 78);
+    -webkit-box-shadow:0 3px 10px 0 rgb(26, 20, 78);
+    text-shadow:0px 0px 5px #fff;
+    cursor: pointer;
+}
+.ad{
+    border-radius: 2px ;
+}
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+}
+.aea{
+    position: absolute;
+    background-color: white;
+    color: rgb(54, 43, 156);
+    box-shadow: 10px 10px 0px rgb( 26, 20, 78);
+    top:30vh;
+    width:50vw;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 5px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%); 
+    border: 2px solid rgb(54, 43, 156);
+    display: none;
+}
+.ed2{
+    display: none;
+}
+.ap2{
+    display:none
+}
+.h3{
+    position: relative;
+    left: 34%;
+    transform: translate(-50%,-50%);
+    font-size: 25px ;
+}
+.fechar{
+    position:relative;
+    left:94.5%;
+    top: -9vh;
+    background-color: rgb(114, 208, 252);
+    box-shadow: 4px 4px 0px rgb( 26, 20, 78);
+    color: rgba(34, 24, 59);
+    border: none;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.fechar:hover{
+    background-color: rgb(54,43,156);
+    color: rgb(255, 255, 255);
+}
+.input{
+    left: 50%;
+    top: 2vh;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    border-color: rgb(54, 43, 156);
+    box-shadow: 5px 5px 0px rgb( 26, 20, 78);
+    border-style: solid;
+    height: 6.5vh;
+    width: 24vw;
+}
+
+.inputlabel{
+    position: relative;
+    top: 1.5vh;
+    transition: 0.3s;
+    left: -18.7vw;
+    font-size: 15px;
+    width: 20vw;
+}
+.caixa:focus~.inputlabel,
+.caixa:valid~.inputlabel{
+    top: -1.3vh;
+    font-size: 10px;
+    color: #262250;
+}
+.caixa{
+    background: none;
+    border-style: none;
+    outline: none;
+    font-size: 17px;
+    color: black;
+    width: 80%;
+    position: relative;
+    top:1.4vh;
+    left:1vw;
+}
+.submitAD{
+    position: relative;
+    top: 3vh;
+    left: 50%;
+    border: none;
+    height: 52px;
+    width: 150px;
+    background-color: rgb(114, 208, 252);
+    color: rgba(34, 24, 59);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 16.5px;
+    font-weight:600;
+}
+.submitAD:hover{
+    background-color:  rgb(80, 108, 161);
+    cursor: pointer;
+
+}
+.listatele{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px rgb(26, 20, 78);
+    border-radius: 3px;
+    box-shadow: 10.0px 10.0px 0px rgb(26, 20, 78);
+}
+table{
+    width: 80vw;
+    border: none;
+}
+th{
+    height: 25px;
+    color: rgb(26, 20, 78);
+}
+.nne{
+    border: solid rgb(54, 43, 156) 2px;
+    background-color: rgb(54, 43, 156);
+    color: white;
+    border-radius: 2px;
+}
+td{
+    height: 25px;
+    color: rgb(26, 20, 78);
+}

@@ -1,0 +1,128 @@
+body{
+    background-size: cover;    
+    height: 100vh;
+    background-image:  linear-gradient(to bottom right, rgb(127, 214, 255),rgb(60, 190, 241), rgb(78, 60, 241) );
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    background-color: white;
+    width: 450px;
+    position: relative;
+    height: 500px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 2px solid rgb(54, 43, 156);
+    box-shadow: 15px 15px 1.5px 0px rgb(26, 20, 78);
+}
+form *{
+    font-weight: bold;
+    color: rgb(80, 108, 161);
+    letter-spacing: -0.5px;
+}
+.logo{
+    align-self: center;
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 155px;
+}
+.sao{
+    color: rgb(34, 27, 99);
+    font-size: 22px;
+    z-index: 1;
+}
+h1{
+    position: relative;
+    top:22vh;
+    text-align: center;
+    z-index: 1;
+    font-size: 22px;
+    color: rgb(80, 108, 161);
+}
+hr{
+    position: absolute;
+    width: 400px;
+    height: 2px;
+    top: 29vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(34, 27, 99);
+    z-index: 0;
+}
+.inputlabel{
+    position: absolute;
+    left: 1vw;
+    top: 1.6vh;
+    pointer-events: none;
+    transition: 0.3s;
+    color: rgb(7, 51, 68) ;
+}
+.input{
+    position: relative; 
+    top: 27.5vh; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-color: rgb(54, 43, 156);
+    border-style: solid;
+    width: 79%;
+    border-radius: 3px;
+    padding: 10.5px;
+    box-shadow:  5.0px 5.0px 0px rgb(26, 20, 78);
+    margin-top: 12.5px;
+}
+.caixa:focus~.inputlabel,
+.caixa:valid~.inputlabel{
+    top: -0vh;
+    font-size: 11px;
+    color: #262250;
+}
+.caixa{
+    background: none;
+    border-style: none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    width: 80%;
+}
+button{
+    position: relative;
+    top: 35vh;
+    left: 50%;
+    border: none;
+    height: 52px;
+    width: 150px;
+    background-color: rgb(114, 208, 252);
+    color: rgba(34, 24, 59);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 16.5px;
+    font-weight:600;
+}
+button:hover{
+    background-color:  rgb(80, 108, 161);
+    cursor: pointer;
+}
+h3{
+    position: absolute;
+    Color: rgb(54, 43, 156);
+    top: 70vh;
+    left: 49%;
+    font-size: 15px;
+    transform: translate(-49%, -50%);
+}
+a{
+    background-color: none;
+    color: rgb(80, 108, 161);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
